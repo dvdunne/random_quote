@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import { getQuote } from "./components/quote";
 import Quote from "./components/quote";
 import "./App.css";
 
 class App extends Component {
   render() {
+    const refreshPage = () => {
+      window.location.reload();
+    };
+
     return (
       <div className="px-4 py-5 my-5 text-center">
         <h1 className="display-5 fw-bold">Random Quotes</h1>
@@ -14,6 +19,7 @@ class App extends Component {
           </div>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <button
+              onClick={refreshPage}
               type="button"
               className="btn btn-primary btn-sm px-4 gap-3 m-4"
             >
