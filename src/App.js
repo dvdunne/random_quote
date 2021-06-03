@@ -5,15 +5,18 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Random Quotes</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">A site that displays a random quote.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <div className="px-4 py-5 my-5 text-center">
+        <h1 className="display-5 fw-bold">Random Quotes</h1>
+        <div className="col-lg-6 mx-auto">
+          <p className="lead mb-4">A site that displays a random quote.</p>
+          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <Quote />
           </div>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 m-4">
+          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button
+              type="button"
+              className="btn btn-primary btn-sm px-4 gap-3 m-4"
+            >
               Get Quote
             </button>
           </div>
