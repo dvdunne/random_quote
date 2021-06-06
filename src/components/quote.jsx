@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import { getQuote } from "../services/quoteList";
 import { randomNumber } from "../utils/random";
+import { getQuote } from "./../services/quoteList";
 
 class Quote extends Component {
   render() {
     const quoteId = Math.ceil(randomNumber(0, 5));
-    console.log(quoteId);
+    const { quote, author } = getQuote(quoteId);
 
-    return <div>{getQuote(quoteId).quote}</div>;
+    return <div>{quote + " - " + author}</div>;
   }
 }
 
